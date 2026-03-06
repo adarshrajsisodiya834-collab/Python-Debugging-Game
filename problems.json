@@ -1,0 +1,286 @@
+{
+"problems": [
+
+{
+"level": 1,
+"group": 1,
+"problems": [
+
+{
+"id": 1,
+"code": [
+"def add(a, b):",
+"    return a - b",
+"",
+"print(add(5, 3))"
+],
+"faulty_line": 2,
+"explanation": "The function subtracts instead of adding."
+},
+
+{
+"id": 2,
+"code": [
+"for i in range(5)",
+"    print(i)"
+],
+"faulty_line": 1,
+"explanation": "Missing colon at end of for loop."
+},
+
+{
+"id": 3,
+"code": [
+"numbers = [1,2,3]",
+"print(numbers[3])"
+],
+"faulty_line": 2,
+"explanation": "Index out of range. Last index is 2."
+},
+
+{
+"id": 4,
+"code": [
+"def greet(name):",
+"print('Hello', name)"
+],
+"faulty_line": 2,
+"explanation": "Function body must be indented."
+},
+
+{
+"id": 5,
+"code": [
+"x = 10",
+"if x = 10:",
+"    print('Ten')"
+],
+"faulty_line": 2,
+"explanation": "Assignment operator used instead of comparison."
+},
+
+{
+"id": 6,
+"code": [
+"nums = [1,2,3]",
+"nums.append[4]",
+"print(nums)"
+],
+"faulty_line": 2,
+"explanation": "append should use parentheses not brackets."
+}
+
+]
+},
+
+{
+"level": 1,
+"group": 2,
+"problems": [
+
+{
+"id": 7,
+"code": [
+"def square(n):",
+"    return n * n",
+"",
+"print(square)"
+],
+"faulty_line": 4,
+"explanation": "Function is printed instead of called."
+},
+
+{
+"id": 8,
+"code": [
+"total = 0",
+"for i in range(1,5):",
+"    total = i",
+"print(total)"
+],
+"faulty_line": 3,
+"explanation": "Value overwritten instead of accumulated."
+},
+
+{
+"id": 9,
+"code": [
+"for i in range(5):",
+"print(i)"
+],
+"faulty_line": 2,
+"explanation": "Loop body must be indented."
+},
+
+{
+"id": 10,
+"code": [
+"def multiply(a,b):",
+"    return a + b",
+"",
+"print(multiply(3,4))"
+],
+"faulty_line": 2,
+"explanation": "Adds numbers instead of multiplying."
+},
+
+{
+"id": 11,
+"code": [
+"nums = [1,2,3]",
+"nums.remove(4)",
+"print(nums)"
+],
+"faulty_line": 2,
+"explanation": "Removing value that does not exist."
+},
+
+{
+"id": 12,
+"code": [
+"word = 'python'",
+"for i in range(len(word)):",
+"    print(word[i+1])"
+],
+"faulty_line": 3,
+"explanation": "Index goes out of range at last character."
+}
+
+]
+},
+
+{
+"level": 2,
+"group": 1,
+"problems": [
+
+{
+"id": 13,
+"code": [
+"def divide(a,b):",
+"    return a*b",
+"",
+"print(divide(10,2))"
+],
+"faulty_line": 2,
+"explanation": "Multiplication used instead of division."
+},
+
+{
+"id": 14,
+"code": [
+"count = 0",
+"while count < 5:",
+"print(count)",
+"count += 1"
+],
+"faulty_line": 3,
+"explanation": "Loop body must be indented."
+},
+
+{
+"id": 15,
+"code": [
+"def is_even(n):",
+"    if n % 2 == 0:",
+"        return True",
+"    else:",
+"        return 'False'"
+],
+"faulty_line": 5,
+"explanation": "Returns string instead of boolean."
+},
+
+{
+"id": 16,
+"code": [
+"data = {'a':1,'b':2}",
+"print(data['c'])"
+],
+"faulty_line": 2,
+"explanation": "Key does not exist in dictionary."
+},
+
+{
+"id": 17,
+"code": [
+"def average(nums):",
+"    return sum(nums) / len(nums)+1",
+"",
+"print(average([2,4,6]))"
+],
+"faulty_line": 2,
+"explanation": "Extra +1 gives wrong average."
+},
+
+{
+"id": 18,
+"code": [
+"items = [1,2,3]",
+"for i in items:",
+"    items.remove(i)"
+],
+"faulty_line": 3,
+"explanation": "Modifying list while iterating."
+}
+
+]
+},
+
+{
+"level": 3,
+"group": 1,
+"problems": [
+
+{
+"id": 19,
+"code": [
+"def factorial(n):",
+"    if n == 0:",
+"        return 0",
+"    return n * factorial(n-1)"
+],
+"faulty_line": 3,
+"explanation": "Base case should return 1."
+},
+
+{
+"id": 20,
+"code": [
+"def add_to_list(lst=[]):",
+"    lst.append(1)",
+"    return lst"
+],
+"faulty_line": 1,
+"explanation": "Mutable default argument issue."
+},
+
+{
+"id": 21,
+"code": [
+"def power(a,b):",
+"    return a ^ b",
+"",
+"print(power(2,3))"
+],
+"faulty_line": 2,
+"explanation": "^ is bitwise XOR not exponent."
+},
+
+{
+"id": 22,
+"code": [
+"def fib(n):",
+"    if n <= 1:",
+"        return n",
+"    return fib(n-1) + fib(n-3)"
+],
+"faulty_line": 4,
+"explanation": "Recursive call should use n-2."
+}
+
+]
+}
+
+]
+}
